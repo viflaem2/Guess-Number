@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess a number</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="guess.js" defer></script>
+</head>
+<body>
+    <h1>Guess a number</h1>
+    <p>I have randomly selected a number between 1 and 100</p>
+    <p>Try and guess it in 10 tries or less</p>
+    <p>I will only tell you if the number is bigger or lower than your guess</p>
+    <div class="form">
+        <div>
+            <label for="guessField">Enter number:</label>
+            <input type="number" min="1" max="100" required id="guessField">
+        </div>
+        <input type="submit" value="Guess!" class="guessSubmit">
+    </div>
+    <div class="result">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lORh"></p>
+    </div>
+</body>
+</html>
